@@ -24,6 +24,9 @@
 </script>
 
 <style lang="scss" scoped>
+  .flex-1 {
+    flex: 1;
+  }
   .week-days {
     height: 41px;
     text-transform: capitalize;
