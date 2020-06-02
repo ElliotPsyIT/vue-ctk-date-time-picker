@@ -31,10 +31,13 @@
         <div
           class="datepicker-container-label flex-1 flex justify-content-center"
         >
-          <TransitionGroup
+          <!-- <TransitionGroup
             :name="transitionLabelName"
             class="h-100 flex align-center flex-1 flex justify-content-right"
-          >
+          > -->
+          <div 
+            class="h-100 flex align-center flex-1 flex justify-content-right"
+          >  
             <CustomButton
               v-for="m in [month]"
               :key="m.month"
@@ -45,11 +48,16 @@
             >
               {{ monthFormatted }}
             </CustomButton>
-          </TransitionGroup>
-          <TransitionGroup
+          <!-- </TransitionGroup> -->
+          </div>
+          <!-- <TransitionGroup
             :name="transitionLabelName"
             class="h-100 flex align-center flex-1 flex"
-          >
+          > -->
+          <!-- justify-content-right -->
+          <div 
+            class="h-100 flex align-center flex-1 flex " 
+          >            
             <CustomButton
               v-for="y in [year]"
               :key="y"
@@ -60,7 +68,8 @@
             >
               {{ year }}
             </CustomButton>
-          </TransitionGroup>
+          <!-- </TransitionGroup> -->
+          </div>
         </div>
         <div class="arrow-month h-100 text-right">
           <button
